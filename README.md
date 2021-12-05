@@ -31,6 +31,7 @@ framework Ecto;
 de receitas e despesas;
 
 ● (1,5 pontos) - A aplicação deve possuir um layout customizado baseado em bootstrap ou um outro framework
+
 [DESAFIO] (1,5 pontos) - Criar o relacionamento entre as entidades utilizadas na aplicação (a princípio
 deve-se ter às entidades usuário e despesa/receita. Contudo pode-se criar quantas entidades achar necessária);
 de UI a sua escolha;
