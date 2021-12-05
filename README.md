@@ -26,10 +26,13 @@ Integrantes : Leonardo Quezado - 1420422
 
 ● (1,5 pontos) - A aplicação deve armazenar dados em um banco de dados PostgreSQL ou MySQL utilizando o
 framework Ecto;
+
 ● (3,0 pontos) - A aplicação deve permitir que um usuário possa realizar a criação, edição, listagem e exclusão
 de receitas e despesas;
+
 ● (1,5 pontos) - A aplicação deve possuir um layout customizado baseado em bootstrap ou um outro framework
 [DESAFIO] (1,5 pontos) - Criar o relacionamento entre as entidades utilizadas na aplicação (a princípio
 deve-se ter às entidades usuário e despesa/receita. Contudo pode-se criar quantas entidades achar necessária);
 de UI a sua escolha;
+
 [DESAFIO] (2 pontos) - A aplicação deve permitir que um usuário realize login na aplicação (autenticação);
