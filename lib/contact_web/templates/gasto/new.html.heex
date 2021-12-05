@@ -1,0 +1,5 @@
+<h1>New Gasto</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.gasto_path(@conn, :create)) %>
+
+<span  class="btn btn-primary" role="button">Retornar<%= link "Back", to: Routes.gasto_path(@conn, :index) %></span>

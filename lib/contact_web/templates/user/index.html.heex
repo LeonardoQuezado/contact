@@ -1,0 +1,29 @@
+<h1> Usuarios </h1>
+
+<table  class="table table-dark">
+
+<thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Veja mais</th>
+  
+    </tr>
+  </thead>
+
+<tbody>
+<%= for user <- @users do %>
+    <tr>
+    <th scope="row">1</th>
+    <td><%= user.name %> </td>
+    <td><%= user.email %> </td>
+
+    <td> <%= link"detalhes", to: Routes.user_path(@conn, :show, user.id)%> </td>
+    </tr>
+<% end %>
+
+</tbody>
+</table>
+<a class="btn btn-primary " href='http://localhost:4000/' role="button"> Volta aqui man </a>
+
+

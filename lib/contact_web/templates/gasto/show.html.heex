@@ -1,0 +1,28 @@
+<h1>Show Gasto</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @gasto.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @gasto.description %>
+  </li>
+
+  <li>
+    <strong>Value:</strong>
+    <%= @gasto.value %>
+  </li>
+
+  <li>
+    <strong>Jafoipago:</strong>
+    <%= @gasto.jafoipago %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.gasto_path(@conn, :edit, @gasto) %></span> |
+<span><%= link "Back", to: Routes.gasto_path(@conn, :index) %></span>

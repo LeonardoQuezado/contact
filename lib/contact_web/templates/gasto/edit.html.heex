@@ -1,0 +1,5 @@
+<h1>Edit Gasto</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.gasto_path(@conn, :update, @gasto)) %>
+
+<span><%= link "Back", to: Routes.gasto_path(@conn, :index) %></span>

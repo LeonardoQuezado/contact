@@ -1,0 +1,35 @@
+<h1>Listing Gastos</h1>
+
+<table  class="table table-dark">
+  <thead class="thead-dark">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Jafoipago</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for gasto <- @gastos do %>
+    <tr>
+      <td><%= gasto.name %></td>
+      <td><%= gasto.description %></td>
+      <td><%= gasto.value %></td>
+      <td><%= gasto.jafoipago %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.gasto_path(@conn, :show, gasto) %></span>
+        <span><%= link "Edit", to: Routes.gasto_path(@conn, :edit, gasto) %></span>
+        <span><%= link "Delete", to: Routes.gasto_path(@conn, :delete, gasto), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span  class="btn btn-primary" role="button" > Novo gasto <%= link "New Gasto", to: Routes.gasto_path(@conn, :new) %></span>
+<br>
+<a class="btn btn-primary " href='http://localhost:4000/' role="button"> Volta aqui man </a>
+<a class="btn btn-primary " href='http://localhost:4000/' role="button"> Gastos mensair relatorio </a>
